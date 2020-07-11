@@ -1,0 +1,26 @@
+{
+  "name": "turn-over",
+  "version": "0.1.0",
+  "description": "A puzzle game",
+  "author": "3h",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node dev-server"
+  },
+  "repository": "huang2002/turn-over",
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "herver": "^0.6.0",
+    "rollup": "^2.11.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "terser": "^4.7.0"
+  },
+  "dependencies": {
+    "super-d": "^0.3.1",
+    "super-x": "^0.16.2"
+  }
+}
