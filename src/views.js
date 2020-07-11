@@ -1,7 +1,7 @@
 import { createBoard, turnOver, createPuzzle, isSameBoard, updateBoard } from './board.js';
 
 const RESIZE_DELAY = 100;
-const COLOR_INIT = '#EFF';
+const COLOR_INIT = '#F6F6F6';
 const COLOR_INVERSE = '#36F';
 const VIEW_TOTAL_SIZE = .9; // * 100%
 const VIEW_ITEM_TOTAL_SIZE = 99; // * 1%
