@@ -76,11 +76,14 @@ const random = (floor, ceiling) => (
  * @returns {Board}
  */
 export const createPuzzle = (size, difficulty) => {
+    console.log('# new puzzle');
     const board = createBoard(size);
     const turns = Math.floor(MIN_TURNS + (MAX_TURNS - MIN_TURNS) * difficulty);
     const length = size * size;
     for (let i = 0; i < turns; i++) {
-        turnOver(board, size, random(0, length));
+        const x =random(0, length);
+        turnOver(board, size, x);
+        console.log(x);
     }
     return board;
 };
