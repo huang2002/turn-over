@@ -1,4 +1,4 @@
-import { $levels } from './views.js';
+import { $levels } from './view.js';
 
 export const header = X.createElement('header', {
     id: 'header',

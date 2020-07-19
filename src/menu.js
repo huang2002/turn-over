@@ -1,8 +1,8 @@
 import {
-    resetTargetBoard, resetCurrentBoard,
+    initPuzzle, resetPuzzle,
     $levels, $boardSizeString,
     MIN_BOARD_SIZE, MAX_BOARD_SIZE
-} from './views.js';
+} from './view.js';
 
 const $menuVisibility = X.toReactive(true);
 
@@ -57,8 +57,8 @@ export const menu = D.Mask({
                 listeners: {
                     click() {
                         $levels.setSync(1);
-                        resetTargetBoard();
-                        resetCurrentBoard();
+                        initPuzzle();
+                        resetPuzzle();
                         $menuVisibility.setSync(false);
                     },
                 },

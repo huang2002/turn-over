@@ -1,4 +1,4 @@
-import { views } from './views.js';
+import { view } from './view.js';
 import { toolbar } from './toolbar.js';
 import { menu } from './menu.js';
 import { header } from './header.js';
@@ -18,7 +18,7 @@ document.body.appendChild(
         },
     },
         header,
-        views,
+        view,
         toolbar,
         menu,
     )

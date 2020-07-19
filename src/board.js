@@ -53,13 +53,9 @@ export const updateBoard = ($board, newBoard) => {
 };
 
 /**
- * @param {Board} boardA
- * @param {Board} boardB
+ * @param {Board} board
  */
-export const isSameBoard = (boardA, boardB) => (
-    boardA.length === boardB.length
-    && boardA.every((value, i) => value === boardB[i])
-);
+export const isEmptyBoard = board => board.every(value => !value);
 
 /**
  * @param {number} floor
@@ -81,7 +77,7 @@ export const createPuzzle = (size, difficulty) => {
     const turns = Math.floor(MIN_TURNS + (MAX_TURNS - MIN_TURNS) * difficulty);
     const length = size * size;
     for (let i = 0; i < turns; i++) {
-        const x =random(0, length);
+        const x = random(0, length);
         turnOver(board, size, x);
         console.log(x);
     }
