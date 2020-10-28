@@ -11,16 +11,16 @@
   },
   "repository": "huang2002/turn-over",
   "devDependencies": {
-    "@babel/core": "^7.10.0",
-    "@babel/preset-env": "^7.10.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "herver": "^0.6.0",
-    "rollup": "^2.11.0",
+    "rollup": "^2.32.1",
     "rollup-plugin-babel": "^4.3.0",
-    "rollup-plugin-terser": "^6.1.0",
-    "terser": "^4.7.0"
+    "rollup-plugin-terser": "^7.0.2",
+    "terser": "^5.3.8"
   },
   "dependencies": {
-    "super-d": "^0.3.1",
+    "super-d": "^0.4.1",
     "super-x": "^0.16.2"
   }
 }
